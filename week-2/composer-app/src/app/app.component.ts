@@ -1,3 +1,10 @@
+/**
+	Title: app.component.ts
+    Author: William Egge
+    Date: 4 June 2023
+    Description: The root component.
+*/
+
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,6 +13,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isLoggedIn: Boolean = true;
-  assignment: string = 'Exercise 2.3 - Data Binding';
+  title = 'composer-app';
 }
