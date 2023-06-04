@@ -16,13 +16,28 @@
 </nav>
 
 <div class="container">
+  <br /><br />
+
   <h2>{{ assignment }}</h2>
-  <div class="row">
+
+  <br /><br />
+  <div class="row" *ngIf="isLoggedIn; else showError">
     <div class="col-md-6">
       <app-my-image></app-my-image>
     </div>
+
     <div class="col-md-6">
       <app-my-details></app-my-details>
     </div>
   </div>
+
+  <ng-template #showError>
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="alert alert-danger">
+          You are not authorized to view this content.
+        </h3>
+      </div>
+    </div>
+  </ng-template>
 </div>

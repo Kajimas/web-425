@@ -1,3 +1,10 @@
+/**
+	Title: my-image.component.ts
+    Author: William Egge
+    Date: 4 June 2023
+    Description: The my-image component.
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
