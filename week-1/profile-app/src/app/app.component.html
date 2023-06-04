@@ -16,13 +16,8 @@
 </nav>
 
 <div class="container">
-  <br /><br />
-
   <h2>{{ assignment }}</h2>
-
-  <br /><br />
-
-  <div class="row" *ngIf="isLoggedIn; else show; error">
+  <div class="row">
     <div class="col-md-6">
       <app-my-image></app-my-image>
     </div>
@@ -30,14 +25,4 @@
       <app-my-details></app-my-details>
     </div>
   </div>
-
-  <ng-template #showError>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="alert alert-danger" role="alert">
-          <h3>Please login to continue.</h3>
-        </div>
-      </div>
-    </div>
-  </ng-template>
 </div>
