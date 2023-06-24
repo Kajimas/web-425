@@ -1,3 +1,10 @@
+/*
+Title: books.service.ts
+Author: William Egge
+Date: 22 June 2023
+Description: The books service ts file for in-n-out-books app.
+*/
+
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { of } from 'rxjs';
