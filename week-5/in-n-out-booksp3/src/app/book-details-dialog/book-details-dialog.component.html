@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title style="color: blue">{{ book.title }}</mat-card-title>
+  <mat-card-content>
+    <div fxLayout="column">
+      <!-- Here you should display other properties of the book using paragraph tags. For example: -->
+      <p>{{ book.authors }}</p>
+      <p>{{ book.isbn }}</p>
+      <!-- Add more properties as needed -->
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="accent" matDialogClose="confirm">
+      OK
+    </button>
+  </mat-card-actions>
+</mat-card>
